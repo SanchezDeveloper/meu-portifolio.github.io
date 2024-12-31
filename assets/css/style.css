@@ -10,6 +10,9 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+h2 {
+    font-size: 2rem;
+}
 
 /*header*/
 
@@ -68,16 +71,18 @@ header ul li a:hover {
     color: #FFF;
     margin-bottom: 10%;
     border-right: 4px solid;
-    width: 23ch;
+    width: fit-content;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(23), blinking 0.5s infinite step-end alternate;
+    animation: typing 3s steps(21), blinking 0.5s infinite step-end alternate;
 }
 
 /*keyframe efeito da palavra front end*/
 @keyframes typing {
     from {
         width: 0;
+    } to {
+        width: 21ch;
     }
 }
 @keyframes blinking {
@@ -92,7 +97,7 @@ header ul li a:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    padding: 13px 15px;
+    padding: 13px 14px;
     border: 1px solid #ffe600;
     border-radius: 5px;
     background-color: #ffe600;
@@ -166,9 +171,11 @@ header ul li a:hover {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    height: 30vh;
+    justify-content: center;
+    height: 100%;
     background-color: #1a1a1a;
     text-align: center;
+    gap: 80px;
 }
 #languages- h2 {
     color: #ffe600;
@@ -176,7 +183,8 @@ header ul li a:hover {
 }
 #languages- .languages-img {
     display: flex;
-    width: 60%;
+    
+    width: 63%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -260,7 +268,7 @@ header ul li a:hover {
 #projects- .card .card-image .card-img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 50%;
     border: 4px solid #464646;
 } 
@@ -412,7 +420,7 @@ footer {
         text-align: center;
     }
     #languages- {
-        height: 24vh;
+        height: 100%;
     }
     #projects- .overlay::before, #projects- .overlay::after {
         position: relative;
@@ -435,7 +443,7 @@ footer {
         text-align: center;
     }
     #languages- {
-        height: 24vh;
+        height: 100%;
     }
     #languages- .languages-img img {
         height: 6vh;

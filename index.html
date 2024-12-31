@@ -57,7 +57,7 @@
         </div>
         <div class="about-desc">
             <h2>Sobre mim</h2>
-            <p>Sou programador Front End, estudo há um ano essa stack, atualmente programo em Vanilla JS, almejo ser um bom programador Full Stack no futuro podendo contribuir em grandes projetos (sou apaixonado por tecnologia e inovação). Também gosto de ouvir música popular brasileira, treinar calistenia e correr nas horas vagas.</p>
+            <p>Sou programador Front-End com dois de experiência (entre estudos, serviços freelances e oportunidades da área), utilizo para desenvolver meus projetos principalmente JavaScript Puro, React e Next.js. Meu objetivo é me tornar um profissional Full Stack, contribuindo para projetos de grande impacto e sempre em busca das últimas inovações tecnológicas. Sou apaixonado por tecnologia e inovação, e estou constantemente aprimorando minhas habilidades para me manter alinhado às tendências do mercado. Nos meus momentos livres, sou fã de música popular brasileira, pratico calistenia e gosto de correr.</p>
             <a href="#projects-" class="projects-btn"><strong>Meus projetos</strong></a>
             
         </div>
@@ -68,24 +68,10 @@
     <section id="languages-">
 
         <h2>Tecnologias</h2>
-        <div class="languages-img">
-            <div>
-                <img src="media/html.png" alt="html 5">
-            </div>
-
-            <div>
-                <img src="media/css.png" alt="css 3">
-            </div>
-
-            <div>
-                <img src="media/js.png" alt="JavaScript">
-            </div>
-            <div>
-                <img src="media/github.png" alt="">
-            </div>
+        <div class="languages-img" id="languages-img">
+            <!-- tecnologias renderizadas dinamicamente -->
         </div>
     </section>
-
 
     <!--Projects-->
 
@@ -94,105 +80,9 @@
         <h2>Projetos</h2>
 
         <div class="slide-conteiner swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/proje-sotec.jpeg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Projeto S.O Tecnologia</h2>
-                            <p class="description">Landing page intuiva criada para captura de Leads para empresa de Segurança Eletrônica</p>
-
-                            <button class="button"><strong><a href="https://sanchezdeveloper.github.io/sotecnologia.github.io/">Acesse</a></strong></button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/proje-gerador.jpeg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Gerador de Senhas</h2>
-                            <p class="description">Web app criado com intuito de gerar senhas aleatórias fortes</p>
-
-                            <button class="button"><strong><a href="https://sanchezdeveloper.github.io/sua-senha.github.io/">Acesse</a></strong></button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/proje-pizzaria.jpeg" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Projeto Pizzaria</h2>
-                            <p class="description">Projeto feito em curso, página para efetuar pedidos em pizzaria.</p>
-
-                            <button class="button"><strong><a href="https://sanchezdeveloper.github.io/pizzaria.github.io/">Acesse</a></strong></button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/profile-img.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Projeto</h2>
-                            <p class="description">EM BREVE</p>
-
-                            <button class="button"><strong>Acesse</strong></button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/profile-img.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Projeto</h2>
-                            <p class="description">EM BREVE</p>
-
-                            <button class="button"><strong>Acesse</strong></button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <img src="media/profile-img.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Projeto</h2>
-                            <p class="description">EM BREVE</p>
-
-                            <button class="button"><strong>Acesse</strong></button>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="card-wrapper swiper-wrapper" id="projects-slides">
+                <!-- cards renderizados dinamicamente -->   
             </div>
             
             <div class="swiper-button-next"></div>
@@ -202,13 +92,15 @@
 
     </section>
 
+    <!-- Contacts -->
+
     <section id="contacts-">
         <h2>Contatos</h2>
         <div class="contacts-img">
             <a href="https://www.linkedin.com/in/vin%C3%ADcius-caio-marques-sanchez-a84786190/" target="_blank"><img src="media/social-linkedin.png" alt="Linkedin"></a>
             <a href="https://github.com/SanchezDeveloper" target="_blank"><img src="media/social-github.png" alt="Github"></a>
             <a href="https://wa.me/5561995080539" target="_blank"><img src="media/social-whatsapp.png" alt="Whatsapp"></a>
-            <a href="cv_vinicius_caio_1023.pdf" target="_blank" ><img src="media/curriculo.png" alt=""></a>
+            <a href="CV Vinícius Caio 1224 Dev Front-End.pdf" target="_blank" ><img src="media/curriculo.png" alt=""></a>
         </div>
     </section>
 

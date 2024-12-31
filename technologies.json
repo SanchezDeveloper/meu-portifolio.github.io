@@ -1,0 +1,34 @@
+[
+    {
+        "image": "media/html.png",
+        "alt": "HTML"
+    },
+    {
+        "image": "media/css.png",
+        "alt": "CSS"
+    },
+    {
+        "image": "media/js.png",
+        "alt": "JavaScript"
+    },
+    {
+        "image": "media/github.png",
+        "alt": "Github"
+    },
+    {
+        "image": "media/react.png",
+        "alt": "React"
+    },
+    {
+        "image": "media/next.png",
+        "alt": "Next JS"
+    },
+    {
+        "image": "media/tailwind.png",
+        "alt": "Tailwind CSS"
+    },
+    {
+        "image": "media/sql.png",
+        "alt": "SQL"
+    }
+]
