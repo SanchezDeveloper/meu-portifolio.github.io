@@ -8,81 +8,96 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between p-4 bg-gray-900 text-white">
-      {/* Logo / Perfil */}
-      <div className="flex items-center gap-2">
-        <Image
-          src="/assets/images/profile-img.png"
-          width={50}
-          height={50}
-          alt="Foto de perfil"
-          className="rounded-full"
-        />
-        <h1 className="text-lg font-semibold">Vinícius</h1>
-      </div>
+    <>
+      {/* Header fixo */}
+      <header className="fixed top-0 left-0 w-full bg-purple-900 text-white h-16 flex items-center justify-between p-4 z-50 shadow-md">
+        {/* Logo / Perfil */}
+        <div className="flex items-center gap-2">
+          <Image
+            src="/assets/images/profile-img.png"
+            width={40}
+            height={40}
+            alt="Foto de perfil"
+            className="rounded-full"
+          />
+          <h1 className="text-lg font-semibold">Vinícius Caio</h1>
+        </div>
 
-      {/* Menu - Desktop */}
-      <nav className="hidden md:block">
-        <ul className="flex gap-6">
-          <li><a href="#inicio" className="hover:text-gray-400">Início</a></li>
-          <li><a href="#sobre-mim" className="hover:text-gray-400">Sobre mim</a></li>
-          <li><a href="#projetos" className="hover:text-gray-400">Projetos</a></li>
-          <li><a href="#contato" className="hover:text-gray-400">Contato</a></li>
-        </ul>
-      </nav>
-
-      {/* Botão do Menu Mobile */}
-      <button
-        className="md:hidden"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Abrir menu"
-      >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-
-      {/* Menu Mobile */}
-      {menuOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-gray-800 md:hidden shadow-lg z-50">
-          <ul className="flex flex-col items-center gap-4 py-4">
-            <li>
-              <a
-                href="#inicio"
-                className="hover:text-gray-400"
-                onClick={() => setMenuOpen(false)}
-              >
-                Início
-              </a>
-            </li>
-            <li>
-              <a
-                href="#sobre-mim"
-                className="hover:text-gray-400"
-                onClick={() => setMenuOpen(false)}
-              >
-                Sobre mim
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projetos"
-                className="hover:text-gray-400"
-                onClick={() => setMenuOpen(false)}
-              >
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contato"
-                className="hover:text-gray-400"
-                onClick={() => setMenuOpen(false)}
-              >
-                Contato
-              </a>
-            </li>
+        {/* Menu - Desktop */}
+        <nav className="hidden md:block">
+          <ul className="flex gap-6">
+            <li><a href="#inicio" className="hover:text-gray-400">Início</a></li>
+            <li><a href="#sobre-mim" className="hover:text-gray-400">Sobre mim</a></li>
+            <li><a href="#projetos" className="hover:text-gray-400">Projetos</a></li>
+            <li><a href="#contato" className="hover:text-gray-400">Contato</a></li>
           </ul>
         </nav>
-      )}
-    </header>
+
+        {/* Botão do Menu Mobile */}
+        <button
+          className="md:hidden z-50"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </header>
+
+      {/* Overlay + Menu Mobile */}
+      <div
+        className={`fixed inset-0 z-40 md:hidden transition-opacity duration-300 ${
+          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        style={{ backdropFilter: menuOpen ? "blur(6px)" : "blur(0px)", backgroundColor: "rgba(0,0,0,0.5)" }}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      <nav
+        className={`
+          md:hidden fixed top-16 right-0 w-2/5 max-w-xs h-full bg-purple-800 shadow-lg z-50
+          transform transition-transform duration-300 ease-in-out
+          ${menuOpen ? "translate-x-0" : "translate-x-full"}
+        `}
+      >
+        <ul className="flex flex-col items-start gap-6 p-6 text-white">
+          <li>
+            <a
+              href="#inicio"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              Início
+            </a>
+          </li>
+          <li>
+            <a
+              href="#sobre-mim"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              Sobre mim
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projetos"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contato"
+              className="hover:text-gray-400"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
