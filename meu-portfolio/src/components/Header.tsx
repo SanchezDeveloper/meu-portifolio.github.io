@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <>
       {/* Header fixo */}
-      <header className="fixed top-0 left-0 w-full bg-purple-900 text-white h-16 flex items-center justify-between p-4 z-50 shadow-md">
+      <header className="fixed top-0 left-0 w-full bg-gray-900 text-white h-16 flex items-center justify-between p-4 z-50 shadow-md">
         {/* Logo / Perfil */}
         <div className="flex items-center gap-2">
           <Image
@@ -20,16 +20,16 @@ export default function Header() {
             alt="Foto de perfil"
             className="rounded-full"
           />
-          <h1 className="text-lg font-semibold">Vinícius Caio</h1>
+          <h1 className="text-lg font-semibold">Sanchez Dev</h1>
         </div>
 
         {/* Menu - Desktop */}
         <nav className="hidden md:block">
           <ul className="flex gap-6">
-            <li><a href="#inicio" className="hover:text-gray-400">Início</a></li>
-            <li><a href="#sobre-mim" className="hover:text-gray-400">Sobre mim</a></li>
-            <li><a href="#projetos" className="hover:text-gray-400">Projetos</a></li>
-            <li><a href="#contato" className="hover:text-gray-400">Contato</a></li>
+            <li><a href="#inicio" className="hover:text-purple-600">Início</a></li>
+            <li><a href="#sobre-mim" className="hover:text-purple-600">Sobre mim</a></li>
+            <li><a href="#projetos" className="hover:text-purple-600">Projetos</a></li>
+            <li><a href="#contato" className="hover:text-purple-600">Contato</a></li>
           </ul>
         </nav>
 
