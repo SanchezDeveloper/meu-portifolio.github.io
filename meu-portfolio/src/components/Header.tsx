@@ -12,16 +12,7 @@ export default function Header() {
       {/* Header fixo */}
       <header className="fixed top-0 left-0 w-full bg-gray-900 text-white h-16 flex items-center justify-between p-4 z-50 shadow-md">
         {/* Logo / Perfil */}
-        <div className="flex items-center gap-2">
-          <Image
-            src="/assets/images/profile-img.png"
-            width={40}
-            height={40}
-            alt="Foto de perfil"
-            className="rounded-full"
-          />
-          <h1 className="text-lg font-semibold">Sanchez Dev</h1>
-        </div>
+        <h1 className="text-lg font-semibold"> <code className="text-purple-800">&lt;</code>Sanchez Dev <code className="text-purple-800">/&gt;</code> </h1>
 
         {/* Menu - Desktop */}
         <nav className="hidden md:block">

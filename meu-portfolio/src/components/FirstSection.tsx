@@ -12,7 +12,7 @@ export default function FisrtSection() {
   });
 
   return (
-    <section className="h-[calc(100dvh-64px)] mt-16 flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-950 text-center text-white px-4" id="inicio">
+    <section className="h-[calc(100dvh-64px)] mt-16 flex items-center justify-center text-center text-white px-4" id="inicio">
       <Image
         src="/assets/images/profile-photo.png"
         width={200}
@@ -27,7 +27,7 @@ export default function FisrtSection() {
           <span className='text-3xl'>{text}<Cursor cursorStyle="|" cursorColor='purple' /></span>
         </div>
 
-        <a href="#saiba-mais" className='p-3 rounded-md bg-purple-800 font-bold transform transition-colors duration-300 hover:bg-gray-800'>Saiba mais</a>
+        <a href="#saiba-mais" className='p-3 rounded-md bg-purple-800 font-bold transform transition-colors duration-300 hover:bg-purple-500'>Saiba mais</a>
 
       </div>
       
