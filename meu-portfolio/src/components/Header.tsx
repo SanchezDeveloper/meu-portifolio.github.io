@@ -63,7 +63,7 @@ export default function Header() {
           <li>
             <a
               href="#inicio"
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Início
@@ -72,7 +72,7 @@ export default function Header() {
           <li>
             <a
               href="#sobre-mim"
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Sobre mim
@@ -81,7 +81,7 @@ export default function Header() {
           <li>
             <a
               href="#projetos"
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Projetos
@@ -90,7 +90,7 @@ export default function Header() {
           <li>
             <a
               href="#contato"
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Contato
