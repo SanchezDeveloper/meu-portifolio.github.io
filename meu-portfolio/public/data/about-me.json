@@ -1,0 +1,20 @@
+{
+  "name": "Vinícius Caio",
+  "nick": "SancheDev",
+  "title": "Desenvolvedor Web",
+  "subtitle": "Apaixonado por tecnologia e por transformar ideias em soluções reais.",
+  "descripption": "Sou desenvolvedor web com mais de 2 anos de experiência em projetos reais como freelancer. Tenho foco em TypeScript, React, Next.js e Node. Gosto de criar interfaces intuitivas, responsivas e com boas práticas de código. Estou sempre buscando aprender novas tecnologias e aprimorar meu trabalho.",
+  "skills": [
+    "TypeScript",
+    "Next.js",
+    "React",
+    "Node.js",  
+    "Tailwind CSS",
+    "APIs REST",
+    "Git e GitHub",
+    "Metodologias Ágeis",
+    "Design Responsivo",
+    "Testes Automatizados"
+  ],
+"goals": "Atualmente busco evoluir como desenvolvedor fullstack e contribuir com soluções que unam performance, design e propósito."
+}

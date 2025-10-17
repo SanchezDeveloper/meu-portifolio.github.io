@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="hidden md:block">
           <ul className="flex gap-6">
             <li><a href="#inicio" className="hover:text-purple-600">Início</a></li>
-            <li><a href="#sobre-mim" className="hover:text-purple-600">Sobre mim</a></li>
+            <li><a href="#about-me" className="hover:text-purple-600">Sobre mim</a></li>
             <li><a href="#projetos" className="hover:text-purple-600">Projetos</a></li>
             <li><a href="#contato" className="hover:text-purple-600">Contato</a></li>
           </ul>

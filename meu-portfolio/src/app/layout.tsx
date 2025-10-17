@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
-import ClientLayout from "@/components/ClientLayout";
+import ClientLayout from "@/components/client-section";
 
 
 const inter = Inter({
