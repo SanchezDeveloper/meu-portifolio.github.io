@@ -1,32 +1,38 @@
 [
     {
-      "image": "media/proje-s7.png",
+      "image": "assets/images/proje-s7.png",
       "title": "Projeto S7 Portôes Automáticos",
       "description": "Site institucional criado para empresa especialista em portões automáticos.",
-      "link": "https://sanchezdeveloper.github.io/s7-page/"
+      "link": "https://s7portasautomaticas.com.br"
     },
     {
-      "image": "media/proje-gerador.png",
+      "image": "assets/images/proje-gerador.png",
       "title": "Gerador de Senhas",
       "description": "projeto criado para geração de senhas fortes.",
       "link": "https://sanchezdeveloper.github.io/sua-senha.github.io/"
     },
     {
-      "image": "media/proje-pgs.png",
+      "image": "assets/images/proje-pgs.png",
       "title": "Projeto PGS Consultoria",
       "description": "Site institucional criado para empresa especialista em consultoria e segurança do trabalho.",
-      "link": "https://sanchezdeveloper.github.io/pgsconsultoria.github.io/"
+      "link": "https://pgsconsultoriasst.com.br"
     },
     {
-        "image": "media/proje-so.png",
+        "image": "assets/images/proje-so.png",
         "title": "Projeto S.O. Tecnologia",
         "description": "Site institucional criado para empresa especialista em consultoria e segurança eletrônica.",
         "link": "https://sanchezdeveloper.github.io/sotecnologia.github.io/"
     },
     {
-        "image": "media/proje-sw.png",
+        "image": "assets/images/proje-sw.png",
         "title": "Projeto SW Solutions",
         "description": "Site institucional criado para empresa especialista em consultoria de TI.",
-        "link": "https://sanchezdeveloper.github.io/swsolutions.github.io/"
+        "link": "https://swsolutions.online/"
+    },
+    {
+        "image": "assets/images/proje-sw.png",
+        "title": "Mais Projetos",
+        "description": "Veja todos os meus projetos em meu perfil do GitHub.",
+        "link": "https://swsolutions.online/"
     }
   ]
