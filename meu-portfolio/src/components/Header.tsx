@@ -22,6 +22,7 @@ export default function Header() {
           <ul className="flex gap-6">
             <li><a href="#home" className="hover:text-purple-600">Início</a></li>
             <li><a href="#about-me" className="hover:text-purple-600">Sobre mim</a></li>
+            <li><a href="#stack" className="hover:text-purple-600">Stacks</a></li>
             <li><a href="#projects" className="hover:text-purple-600">Projetos</a></li>
             <li><a href="#contacts" className="hover:text-purple-600">Contato</a></li>
           </ul>
@@ -48,7 +49,7 @@ export default function Header() {
 
       <nav
         className={`
-          md:hidden fixed top-16 right-0 w-2/5 max-w-xs h-full bg-purple-800 shadow-lg z-50
+          md:hidden fixed top-16 right-0 w-2/5 max-w-xs h-full bg-gray-800/70 shadow-lg z-50
           transform transition-transform duration-300 ease-in-out
           ${menuOpen ? "translate-x-0" : "translate-x-full"}
         `}
@@ -57,7 +58,7 @@ export default function Header() {
           <li>
             <a
               href="#home"
-              className="hover:text-gray-400 transform transition-colors duration-300"
+              className="transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Início
@@ -66,7 +67,7 @@ export default function Header() {
           <li>
             <a
               href="#about-me"
-              className="hover:text-gray-400 transform transition-colors duration-300"
+              className="transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Sobre mim
@@ -74,8 +75,17 @@ export default function Header() {
           </li>
           <li>
             <a
+              href="#stack"
+              className="transform transition-colors duration-300"
+              onClick={() => setMenuOpen(false)}
+            >
+              Stack
+            </a>
+          </li>
+          <li>
+            <a
               href="#projects"
-              className="hover:text-gray-400 transform transition-colors duration-300"
+              className="transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Projetos
@@ -84,7 +94,7 @@ export default function Header() {
           <li>
             <a
               href="#contacts"
-              className="hover:text-gray-400 transform transition-colors duration-300"
+              className="transform transition-colors duration-300"
               onClick={() => setMenuOpen(false)}
             >
               Contato

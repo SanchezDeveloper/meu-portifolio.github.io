@@ -1,0 +1,24 @@
+{
+  "stack": [
+    {
+      "icon": "🖌",
+      "title": "Frontend — Next.js + React + TypeScript + Tailwind",
+      "description": "Crio interfaces performáticas e acessíveis com animações suaves e código escalável."
+    },
+    {
+      "icon": "🧠",
+      "title": "Backend — Node.js + Prisma + PostgreSQL",
+      "description": "APIs seguras e organizadas com boas práticas de arquitetura e autenticação."
+    },
+    {
+      "icon": "⚙️",
+      "title": "Integrações — Clerk, EmailJS, Cloudinary",
+      "description": "Implemento autenticação, envio de e-mails e upload otimizado de imagens."
+    },
+    {
+      "icon": "🛠️",
+      "title": "Dev Tools — Git, Vercel, VSCode",
+      "description": "Foco em produtividade, versionamento limpo e deploys automatizados."
+    }
+  ]
+}

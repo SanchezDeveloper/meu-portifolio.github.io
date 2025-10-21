@@ -40,13 +40,13 @@ export default function ContactSection() {
   return (
     <section
       id="contacts"
-      className="relative flex items-center py-24 px-6 text-white overflow-hidden min-h-[calc(100dvh-64px)] "
+      className="relative flex flex-col justify-center items-center mx-auto py-24 px-6 text-white overflow-hidden min-h-[calc(100dvh-64px)] max-w-[90dvw] "
     >
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className=" max-w-3xl mx-auto text-center"
+        className=" mx-auto text-center"
       >
         {/* Título */}
         <h2 className="text-3xl md:text-3xl font-bold mb-6 drop-shadow-lg">
@@ -70,7 +70,7 @@ export default function ContactSection() {
         </a>
 
         {/* Ícones sociais */}
-        <div className="flex justify-center gap-6 mt-12">
+        <div className="flex justify-center flex-wrap gap-6 mt-12">
           <a
             href="mailto:vinicsanchez@gmail.com"
             className="p-3 rounded-full bg-white/10 hover:bg-purple-700 transition-all duration-300"

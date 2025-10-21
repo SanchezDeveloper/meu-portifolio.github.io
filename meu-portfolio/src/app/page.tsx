@@ -4,6 +4,7 @@ import Header from "@/components/header"
 import AboutSection from "@/components/about-section";
 import PortfolioShowcase from "@/components/portfolio-showcase";
 import ContactSection from "@/components/contact-section";
+import StackSection from "@/components/stack-section";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <article>
           <FisrtSection />
           <AboutSection />
+          <StackSection />
           <PortfolioShowcase />
           <ContactSection />
         </article>
